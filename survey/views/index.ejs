@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+         
+
+          <h1> <%= new Date()%> </h1>
+        <form action="/display" method="post">
+            <fieldset style=" border:2px solid green ; width:35%">
+                <legend style=" padding: 0.2em 0.5em;
+                                border:1px solid green;
+                                color:green;
+                                font-size:90%;
+                                text-align:left;">Surevy Form</legend>
+                <label for="name"></label><br/><br/>
+                Your Name: <input type="text" name="name" >
+                <label style="float:left;width:25%;margin-right:0.5em;padding-top:0.2em;" for="location"></label><br/> <br/>
+                    Dojo Location: <select name="location">
+                                            <option value="Seattle">Seattle</option>
+                                            <option value="California">Orange County</option>
+                                            <option value="Washington">DC</option>
+                                            <option value="Texat">Dalas</option>
+                                    </select>
+                <label style="float:left;width:25%;margin-right:0.5em;padding-top:0.2em;"></label><br/> <br/>
+                Favorite language: 
+                                    <select name="language">
+                                            <option value="Python">Python</option>
+                                            <option value="C#">C#</option>
+                                            <option value="MEAN">MEAN</option>
+                                            <option value="Web FUn">Web Fun</option>
+                                    </select>
+                <label style="float:left;width:25%;margin-right:0.5em;padding-top:0.2em;"></label><br/> <br/>
+                Comment (Optional): <textarea rows="4" cols="20" name="comment"></textarea>
+                <label style="float:left;width:25%;margin-right:0.5em;padding-top:0.2em;"></label><br/> <br/>
+                <input type="submit" name="" value="Submit">
+
+            </fieldset>
+        </form>
+    
+    </body>
+</html>
